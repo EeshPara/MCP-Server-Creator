@@ -10,7 +10,7 @@ async def create_and_explore():
     """Example of using the MCP Server Creator"""
     
     # Connect to the MCP Server Creator
-    client = Client("mcp_server_creator.py")
+    client = Client("mcp_server_creator_package.mcp_server_creator")
     
     async with client:
         print("🏗️  Connected to MCP Server Creator")

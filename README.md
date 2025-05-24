@@ -13,22 +13,24 @@ A powerful Model Context Protocol (MCP) server that creates other MCP servers! T
 
 ## Installation
 
-1. Make sure you have FastMCP installed:
-```bash
-pip install fastmcp
-```
+1. Install the package from PyPI:
+   ```bash
+   pip install mcp-server-creator
+   ```
 
-2. Save the `mcp_server_creator.py` file to your project directory
+2. Ensure you have FastMCP installed (it should be installed as a dependency, but you can also install it explicitly):
+   ```bash
+   pip install fastmcp
+   ```
 
-3. Run the server:
-```bash
-fastmcp run mcp_server_creator.py
-```
+## Running the Server
 
-Or run it directly:
+Once installed, you can run the server using FastMCP, pointing to the installed module:
+
 ```bash
-python mcp_server_creator.py
+fastmcp run mcp_server_creator_package.mcp_server_creator
 ```
+(Note: We might add a direct command-line entry point later for easier execution.)
 
 ## Quick Start
 
@@ -39,7 +41,7 @@ import asyncio
 from fastmcp import Client
 
 async def create_simple_server():
-    client = Client("mcp_server_creator.py")
+    client = Client("mcp_server_creator_package.mcp_server_creator")
     
     async with client:
         # Create server
@@ -153,7 +155,7 @@ Create a complete example Weather Service server to demonstrate capabilities.
 
 ```python
 async def create_advanced_server():
-    client = Client("mcp_server_creator.py")
+    client = Client("mcp_server_creator_package.mcp_server_creator")
     
     async with client:
         # Create server

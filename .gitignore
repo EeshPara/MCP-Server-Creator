@@ -48,3 +48,30 @@ test_server_output.py
 # Logs
 *.log
 setup.sh
+
+# Python build artifacts and distribution
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+*.egg
+venv/
+env/
+.env
+*.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# macOS specific
+.DS_Store

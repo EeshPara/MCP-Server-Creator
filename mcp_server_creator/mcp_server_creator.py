@@ -650,5 +650,10 @@ def get_server_code(server_id: str) -> dict:
         "code": generate_server_code(server_id)
     }
 
-if __name__ == "__main__":
+
+def main():
+    """Entry point for the mcp-server-creator command"""
     mcp.run()
+
+if __name__ == "__main__":
+    main()

@@ -5,11 +5,15 @@ This is a meta-MCP server that provides tools for generating FastMCP server code
 """
 
 import json
+import os
 import textwrap
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, field
 from datetime import datetime
+
+# Set required environment variable for FastMCP 2.8.1+
+os.environ.setdefault('FASTMCP_LOG_LEVEL', 'INFO')
 
 from fastmcp import FastMCP, Context
 

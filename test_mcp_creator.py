@@ -14,7 +14,7 @@ async def test_all_features():
     print("🧪 Testing MCP Server Creator\n")
     
     # Connect to the MCP Server Creator
-    client = Client("mcp_server_creator_package.mcp_server_creator")
+    client = Client("mcp_server_creator.mcp_server_creator")
     
     async with client:
         # Test 1: Create a server

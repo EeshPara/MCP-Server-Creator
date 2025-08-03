@@ -4,7 +4,8 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn mcp_server_creator.server:app --host 0.0.0.0 --port 10000
+    startCommand: uvicorn mcp_server_creator.api:app --host 0.0.0.0 --port 10000
     envVars:
       - key: FASTMCP_LOG_LEVEL
         value: error
+
